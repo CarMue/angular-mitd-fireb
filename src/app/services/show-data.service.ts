@@ -38,7 +38,7 @@ export class ShowDataService {
   }
 
   deleteShow(show: Show) {
-    this.af.collection(this.serien).doc(show.uid).delete;
+    this.af.collection(this.serien).doc(show.uid).delete();
   }
 
   async showShowDetails(show: Show) {
